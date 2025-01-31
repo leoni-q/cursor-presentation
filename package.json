@@ -1,0 +1,21 @@
+{
+  "name": "cursor-presentation",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.1.1",
+    "@fontsource/roboto-mono": "^5.1.1",
+    "@slidev/cli": "^0.48.0-beta.24",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-academic": "^2.1.0"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.31",
+    "playwright-chromium": "^1.41.2"
+  }
+}

@@ -1,0 +1,94 @@
+Add there also assets/arc-agi.webp image below the charts, link to the blog post: @https://theahura.substack.com/p/tech-things-ai-benchmarks-o3-and  and the best fitting quote from this article:
+```
+I haven't been writing the "Tech Things" series long enough to claim that there are any long running themes of this blog, but one theme that you could maybe point to is the belief that, contrary to naysayers, AI is going to continue growing and continue becoming more powerful. One reason for this belief is that AI systems continue to outperform expectations. We set challenges and benchmarks that top scientists believe are untouchable, only for AI to blow past them within months.
+
+If you were thinking about this from first principles, there are a few kinds of challenges that you maybe want to use to put AI through the paces. You want to make sure your challenges aren't easily google-able — otherwise the answers may just be in the training set for these models. You want to make sure these challenges are good proxies for usefulness — no one cares if your model is really good at underwater basket weaving, that's just not an industry anyone cares about. You want to make sure that these challenges are easy for humans but hard for AI — if your AI system can count the number of R's in strawberry properly, maybe those naysayers will finally shut up about how dumb your systems are and start appreciating your AI's (and by proxy, your) genius.
+
+In general, if your goal is AGI, you want to construct benchmarks that are reasonable approximations of intelligence. And then, if you get really good at those benchmarks, you can say you've achieved AGI.
+
+Over the last few years, several benchmark challenges have risen to the forefront of the AI world.
+
+There's a few programming related tests like SWE-bench Verified — a series of real-world software engineering tasks — and CodeForces — a website for competition programming.
+
+
+There's GPQA (Google-proof question-answer), which, as the name suggests, is a dataset of questions and answers that are considered to be "Google proof".
+
+
+There's the FrontierMath benchmark, a series of math problems that are unpublished and considered incredibly difficult.
+
+
+And there's the ARC Challenge, a reasoning test of puzzles that are demonstrably easy for humans to solve but very difficult for AI.
+
+
+Amusingly, this is the only question in the example set I’ve provided that I can actually do. It’s also the one that is hardest for AI to do.
+In case it's not obvious, all of these benchmarks are really really hard for AI systems, and most of them are really really hard for humans too. Here's a fun little set of statistics:
+
+The current state of the art for SWE-Bench is ~50%, while the best code forces model is hovering around 1800 ELO. Both impressive, but you're still going to need to hire a few software engineers.
+
+GPQA has a 74% accuracy rating among PhDs in the relevant subject. When GPQA was published ~one year ago, the best AI systems were hovering around 40% accuracy.
+
+FrontierMath is considered entirely unsolved by AI, the best models get less than 5% accuracy.
+
+The average mechanical turk gets about 75% on ARC AGI. As of last week, the best AI models were getting around 30%.
+
+If you're someone who thinks about benchmarks, you care a lot about saturation. Saturation is when the AI models start performing so well on a task, the task is no longer considered to be a good measure of progress. At one point, people would use the AIME (American Invitational Math Exam) as a benchmark. Current AI systems come close to acing that exam; as a result, there's no way to tell if new models are better than old ones using AIME alone. GPQA, FrontierMath, ARC — these are unsaturated. When these benchmarks were released, there was a ton of headroom for different AI models to compete. And the creators and many researchers believed that these benchmarks would remain unsaturated (and in some cases, totally untouched) for a long time.
+
+
+
+The Fields Medal is the Nobel Prize of mathematics. Terrance and Tim know what they are talking about. When they say something is hard, it’s really hard.
+When faced with the daunting landscape, OpenAI had only two words: "Challenge accepted". From the most recent OpenAI livestream:
+
+For the last day of this event, we thought it would be fun to go from one Frontier Model to our next Frontier Model. Today, we’re going to talk about that next Frontier Model, which you would think logically maybe should be called O2, but out of respect to our friends at Telefonica, and in the grand tradition of OpenAI being really truly bad at names, it’s going to be called O3 actually.
+
+…
+
+On software style benchmarks, we have SWE-Bench Verified, which is a benchmark consisting of real-world software tasks. We’re seeing that O3 performs at about 71.7% accuracy, which is over 20% better than our O1 models. Now, this really signifies that we’re really climbing the frontier of utility as well. On competition code, we see that O1 achieves an ELO on this contest coding site called Codeforces, about 1891. At our most aggressive high test time compute settings, O3 is able to achieve almost like a 2727 ELO here.
+
+…
+
+There’s another very tough benchmark which is called GPQ Diamond, and this measures the model’s performance on PhD level science questions. Here, we get another state-of-the-art number, 87.7%. Just to put this in perspective, if you take an expert PhD, they typically get about 70% in kind of their field of strength here. So, one thing that you might notice from some of these benchmarks is that we’re reaching saturation for a lot of them or nearing saturation. So, the last year has really highlighted the need for really harder benchmarks to accurately assess where our Frontier models lie. And I think a couple have emerged as fairly promising over the last months.
+
+One in particular I want to call out is Epoch AI’s Frontier math benchmark. Now, you can see the scores look a lot lower than they did for the previous benchmarks we showed, and this is because this is considered today the toughest mathematical benchmark out there. This is a data set that consists of novel, unpublished and also very hard to extremely hard problems. Even Terrance Tao said it would take professional mathematicians hours or even days to solve one of these problems. And today all offerings out there have less than 2% accuracy on this benchmark. And we’re seeing with O3 in aggressive test time settings, we’re able to get over 25%.
+
+…
+
+Now, ARC AGI version 1 took 5 years to go from 0% to 5% with leading Frontier models. However, today I’m very excited to say that O3 has scored a new state-of-the-art score that we have verified on low compute. For uh, O3, it has scored 75.7 on ARC AI’s semi-private holdout set…As a capabilities demonstration, when we ask O3 to think longer and we actually ramp up to high compute, O3 was able to score 87.5% on the same hidden holdout set. This is especially important. This is especially important because human performance is is comparable at 85% threshold. So, being above this is a major Milestone and we have never tested a system that has done this or any model that has done this beforehand.
+
+Here are some visuals to help make the point:
+
+Imagen
+An ELO of 2727 means O3 is in the top 200 competitive programmers in the world on CodeForces.
+Imagen
+Imagen
+There is some reason to believe that this is not as impressive as it seems. Supposedly the questions in the set were not all of equal difficulty, and the model performed well on the ‘easier’ difficulty questions. See here for a take from a mathematician. I, however, continue to be impressed.
+Imagen
+I think the reaction from the AI world can be lightly summarized by the following quote from the stream:
+
+Yeah, um, when I look at these scores I realize um, I need to switch my worldview a little bit. I need to fix my AI intuitions about what AI can actually do and what it’s capable of.
+
+These are, frankly, insane results. And they've triggered deep existential crises among a lot of AI engineers specifically, and software engineers more broadly. Put bluntly, software as a field is on the chopping block, much like graphic design and copyediting before. If your job consists primarily of writing code, you should start thinking about how to level up to layers of abstraction that require deep thinking about human problems. The code is literally starting to write itself.
+
+The one saving grace is that O3 is still pretty expensive. The light version of O3 cost ~$20 per ARC task, while the average Mechanical Turker costs ~$2 for the same1. Still, how much is a PhD worth? With O3, you can hire an automated PhD in anything you want for less money than dinner in Manhattan. And, of course, the price will drop. The question now is when, not if2.
+
+At a societal level, this is not a bad thing! The spread of these tools will lead to an explosion of automation and application as non-technical laymen find that they can build directly. As a parallel, I think a lot about the video game industry. In the early days, game development was limited to programmers who were capable of developing on bare metal. These guys were wizards, able to extract incredible performance from limited hardware. But there were maybe 100 guys like that in the entire world. The release of game engines like Unreal and Unity meant thousands of people could create games without having to learn assembly, and that in turn led to an indie explosion.
+
+Still, if your entire career was knowing how to write Motorola 68000 instruction sets to optimize games for the Sega Genesis, you may not be that thrilled with the way the market has gone.
+
+In the past, I've spoken about information arbitrage.
+
+Instead of looking for things that don't exist, it is much smarter to look for things that already exist, that only you or a small group of people know about. And in particular, you should be looking to minimize what I call the knowledge ratio -- that is, the ratio of 'people who think this is easy to build' / 'people for whom this would be really valuable'.
+
+An example.
+
+A friend of mine recently started a company that sells an AI detector. Basically, you put in a bit of text, and the service will tell you how likely it is that that text was AI generated. If you don't work in AI, this may sound like a really hard problem. Maybe even impossible. Generative AI is pretty good these days, and there's constantly stories about teachers trying to detect AI on students essays and failing, and you personally have likely seen a bunch of examples of things that you couldn't be sure were AI generated. Being able to accurately detect AI generated text probably sounds like a superpower to the vast majority of people. I work in AI and have for about a decade -- I think this is a two week project for an AI engineer, at most.
+
+An idiot might think that's an insult. It's not. It is an incredibly high compliment. What my friend is doing here is really smart. He's identified something that is immensely valuable, that was trivially obvious for him to build. And he spends almost no time building it. Instead he can just sell. He sells superpowers to people who think that this service is magic, and only a handful of people know that it's like two weeks of work for him to create.
+
+…
+
+The general term for the mismatch between specialized knowledge and global market understanding is what I call 'information arbitrage'. It's incredibly apparent in the AI world right now. There are maybe 10000 people in the world who know enough about AI to create something of value. Approximately half of them are at Google, a bunch at OpenAI. Some anons on Discord maybe. There are billions of people for whom AI is literally magic, and even the most basic AI services could be life changing. The knowledge ratio for most things in AI right now is really small! Great time to be building a company in AI.
+
+Right now, there are a handful of people who have realized that computer science as we know it is dead — AI has written every line of code that I have worked on in the last two months, and I have heard the same from many people I respect. And the vast majority of the world hasn't caught up, and has no idea that this is even possible. Plan accordingly!
+
+1
+```
