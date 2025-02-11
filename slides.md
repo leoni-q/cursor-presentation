@@ -34,7 +34,7 @@ heading: Agenda
 
 <v-clicks>
 
-- The AI Driver's Seat Evolution
+- AI-Assisted Development Evolution
 - LLM Limitations & Prompt Engineering
 - Cursor's Architecture for AI Collaboration
 - Live Demo
@@ -60,19 +60,20 @@ heading: The Evolution of Software Engineering
 
 <div>
 
-## AI-Assisted Evolution
-1. **Line Completion** (2022)
-   - GitHub Copilot autocomplete
-   - Like AI lane-keeping assist
-2. **Code Chunks** (2023)
-   - ChatGPT code generation
-   - Like AI handling speed & distance
-3. **Full Features** (2024+)
-   - Cursor's multi-file edits
-   - Like AI managing complex maneuvers
-4. **Project Scale** (Coming)
-   - System-wide modifications
-   - Like full self-driving testing
+## AI-Assisted Evolution: The Self-Driving Parallel
+
+- **Level 1: Line Keeping** (2022)
+  - Code autocomplete with GitHub Copilot
+  - Basic assistance like lane departure warnings
+- **Level 2: Basic Automation** (2023)
+  - ChatGPT code generation
+  - Like cruise control and distance management
+- **Level 3: Conditional Autonomy** (2024+)
+  - Multi-file edits with Cursor
+  - Complex maneuvers with human oversight
+- **Level 4: High Autonomy** (Coming)
+  - System-wide modifications
+  - Full project navigation with safety review
 
 </div>
 </div>
@@ -136,7 +137,7 @@ heading: "Future Outlook (2025)"
 - Improved Codeforces performance
 
 <div class="text-sm opacity-80 italic border-l-4 border-gray-400 pl-4 mt-8">
-  "Right now, there are a handful of people who have realized that computer science as we know it is dead — AI has written every line of code that I have worked on in the last two months, and I have heard the same from many people I respect. And the vast majority of the world hasn't caught up, and has no idea that this is even possible. Plan accordingly!"
+  "AI has written every line of code that I have worked on in the last two months, and I have heard the same from many people I respect. And the vast majority of the world hasn't caught up, and has no idea that this is even possible. Plan accordingly"
   <div class="text-xs mt-1">
     <a href="https://theahura.substack.com/p/tech-things-ai-benchmarks-o3-and" target="_blank" class="text-blue-500">
       Source: Tech Things: AI Benchmarks, O3, and the End of Software Engineering
@@ -167,8 +168,8 @@ heading: "Prompt Engineering Mastery"
 - "Garbage in, garbage out" principle
 - Context is king
 - Metaprompting techniques
-- Template-based approaches
 - Think more, code less
+- Template-based approaches
 
 </v-clicks>
 
@@ -211,7 +212,7 @@ heading: "Let's Build This Presentation!"
 ---
 
 <div class="mt-8">
-Time for the meta-twist: Using Cursor to recreate what you just saw
+Live coding session using Cursor
 
 <div class="mt-4">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
