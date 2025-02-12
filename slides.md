@@ -34,9 +34,9 @@ heading: Agenda
 
 <v-clicks>
 
-- AI-Assisted Development Evolution
-- LLM Limitations & Prompt Engineering
-- Cursor's Architecture for AI Collaboration
+- What's the current state of AI in software engineering?
+- LLM Limitations
+- Prompt Engineering
 - Live Demo
 
 </v-clicks>
@@ -60,7 +60,7 @@ heading: The Evolution of Software Engineering
 
 <div>
 
-## AI-Assisted Evolution: The Self-Driving Parallel
+## AI-Assisted Coding
 
 - **Level 1: Line Keeping** (2022)
   - Code autocomplete with GitHub Copilot
@@ -216,7 +216,7 @@ Live coding session using Cursor
 
 <div class="mt-4">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Ready to dive in? <carbon:arrow-right class="inline"/>
+    dive in <carbon:arrow-right class="inline"/>
   </span>
 </div>
 </div>
