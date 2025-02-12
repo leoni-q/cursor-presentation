@@ -227,7 +227,7 @@ layout: end
 
 # Thank You!
 
-[GitHub Repo](https://github.com/yourusername/cursor-presentation) · [Documentation](https://cursor.sh)
+[GitHub Repo](https://github.com/leoni-q/cursor-presentation) · [Cursor](https://cursor.sh)
 
 <style>
 .slidev-layout {
